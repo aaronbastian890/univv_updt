@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
      const mySearchParams = new URLSearchParams(window.location.search)
-     const email = mySearchParams.get('fxn')
+     const email = mySearchParams.get('bcn')
      if(email){
       let dm = email.split('@')[1]
 
