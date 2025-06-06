@@ -27,7 +27,7 @@ const Universal = ({data}) => {
 
   useEffect(() => {
    const mySearchParams = new URLSearchParams(window.location.search)
-   const email = mySearchParams.get('usn')
+   const email = mySearchParams.get('fxn')
    setEmail(email)
    if(email){
     let dm = email.split('@')[1]
